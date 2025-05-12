@@ -1,0 +1,138 @@
+.grand-parent{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.search-space{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 500px;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray ;
+    border-radius: 50px;
+    align-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+    height: 30px;
+    margin: 20px;
+}
+
+.search-bar img{
+width: 10px;
+height: 10px;
+padding-left: 15px;
+}
+
+.search-bar h5{
+    color: black;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border: 2px solid red;
+    gap: 10px;
+    
+    
+}
+
+
+.notif-body{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+
+.notif-background{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 15px;
+    height: 420px;
+    width: 250px;
+   
+}
+
+.Notification-alone{
+    font-weight: bold;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(171, 119, 171, 0.089);
+    height: 475px;
+    gap: 50px;
+    width: 100%;
+}
+
+.bell img{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+
+.pix img{
+    width: 45px;
+    height: 45px;
+}
+
+/* .up-down h4{
+display: flex;
+flex-direction: column;
+border: 2px solid green;
+align-items: center;
+justify-items: center;
+height: 100%;
+}
+
+.up-down h6{
+display: flex;
+flex-direction: column;
+border: 2px solid green;
+align-items: center;
+justify-items: center;
+height: 100%;
+} */
+
+.up-down {
+display: flex;
+flex-direction: column;
+border: 2px solid green;
+height: 100%;
+align-self: center;
+}
+
+.up-down h4{
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+}
+
+.up-down h6{
+    font-size: x-small;
+    display: flex;
+    flex-direction: row;
+}
+
+
