@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.logo {
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007960;
+}
+
+.form-container h2 {
+  margin: 10px 0 20px;
+  font-size: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-submit {
+  background-color: #007960;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.btn-submit:hover {
+  background-color: #00614e;
+}
+
+.login-link {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #007960;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  input, .btn-submit {
+    font-size: 15px;
+  }
+}
