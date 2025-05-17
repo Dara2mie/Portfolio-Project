@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #004d40;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile-section h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.profile-section .title {
+  font-size: 14px;
+  color: #666;
+}
+
+.profile-section .desc {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.portfolio h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  flex: 1 1 250px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+  padding: 0 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
