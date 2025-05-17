@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Your Project</title>
+  <link rel="stylesheet" href="upload.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo"> <img src="./project1images/jodna-logo.png" alt="logo"> Jodna Technologies</div>
+  <div class="nav-right">
+    <input type="text" placeholder="Search Creatives work..." />
+    <button class="btn btn-outline">Share Your Work</button>
+    <div>🔔</div>
+    <div>
+      <strong>Adewale Austin</strong><br>
+      <small>UI/UX Design Intern</small>
+    </div>
+  </div>
+</header>
+
+<div class="upload-container">
+  <div class="upload-header">
+    <a href="#" class="cancel-link">Cancel</a>
+    <div>
+      <button class="btn btn-outline">Save As Draft</button>
+      <button class="btn btn-primary">Continue</button>
+    </div>
+  </div>
+
+  <h2>Upload Your Project</h2>
+  <p>Fill in the details below and share it with the world.</p>
+
+  <div class="upload-box" id="uploadBox">
+    <p>Drag & drop your file here or <label for="fileInput"><span>Browse</span></label></p>
+    <input type="file" id="fileInput" accept="image/*">
+    <div class="preview" id="preview"></div>
+  </div>
+
+  <p class="pro-tip">
+    <strong>Pro Tip:</strong> Great portfolio entries include high-quality images, clear and concise descriptions, and a well-documented process. Show the problem you solved and the impact of your work!
+  </p>
+</div>
+
+<script>
+  const uploadBox = document.getElementById('uploadBox');
+  const fileInput = document.getElementById('fileInput');
+  const preview = document.getElementById('preview');
+
+  uploadBox.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    uploadBox.classList.add('dragover');
+  });
+
+  uploadBox.addEventListener('dragleave', () => {
+    uploadBox.classList.remove('dragover');
+  });
+
+  uploadBox.addEventListener('drop', (e) => {
+    e.preventDefault();
+    uploadBox.classList.remove('dragover');
+    const file = e.dataTransfer.files[0];
+    fileInput.files = e.dataTransfer.files;
+    previewFile(file);
+  });
+
+  fileInput.addEventListener('change', () => {
+    const file = fileInput.files[0];
+    previewFile(file);
+  });
+
+  function previewFile(file) {
+    preview.innerHTML = '';
+    if (file && file.type.startsWith('image/')) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        preview.appendChild(img);
+      };
+      reader.readAsDataURL(file);
+    } else {
+      preview.textContent = "Selected file is not an image.";
+    }
+  }
+</script>
+
+</body>
+</html>
