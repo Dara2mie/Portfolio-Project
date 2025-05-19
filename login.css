@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  width: 50%;
   margin: 0 auto;
   padding: 20px;
   background-color: #f4f4f4;
@@ -19,7 +19,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid red;
 }
 
 header {
@@ -28,12 +27,17 @@ header {
   align-items: center;
   padding-bottom: 10px;
   background-color: white;
-  height: 70px;
+  height: 60px;
 }
 
 .logo {
   font-weight: bold;
   color: #004d40;
+  font-size: small;
+}
+
+.logo img{
+  height: 40px;
 }
 
 .top-link a {
