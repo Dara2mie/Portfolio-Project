@@ -49,6 +49,7 @@ header {
   background: transparent;
   color: #007960;
   border: 1px solid #007960;
+  border-radius: 30px;
 }
 
 .btn-primary {
@@ -123,6 +124,21 @@ h2 {
   font-size: 14px;
   color: #555;
   margin-top: 20px;
+}
+
+.search img{
+ width: 10px;
+height: 10px;
+padding-left: 20px;
+}
+
+.search{
+  color: black;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 50px;
+
 }
 
 @media (max-width: 768px) {
