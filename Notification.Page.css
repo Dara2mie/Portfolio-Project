@@ -10,78 +10,55 @@ body {
   color: #333;
 }
 
-.topbar {
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: #fff;
-  border-bottom: 1px solid #eaeaea;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
   flex-wrap: wrap;
+  padding-right: 50px;
 }
 
 .logo {
-  font-size: 1.2rem;
   font-weight: bold;
-  color: #00775c;
+  font-size: 18px;
 }
 
-.nav {
+.nav-right {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  flex: 1;
-  max-width: 400px;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.nav input {
-  flex: 1;
-  padding: 0.5rem;
-  border-radius: 8px;
+.nav-right input {
+  padding: 5px;
+  border-radius: 6px;
   border: 1px solid #ccc;
 }
 
-.actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.share-btn {
-  background: #00775c;
-  color: white;
+.btn {
+  padding: 8px 16px;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 600;
 }
 
-.bell {
-  position: relative;
-  font-size: 1.2rem;
+.btn-outline {
+  background: transparent;
+  color: #007960;
+  border: 1px solid #007960;
+  border-radius: 30px;
 }
 
-.notif-count {
-  position: absolute;
-  top: -5px;
-  right: -10px;
-  background: red;
-  color: white;
-  font-size: 0.7rem;
-  border-radius: 50%;
-  padding: 2px 6px;
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.profile img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.btn-primary {
+  background-color: #007960;
+  color: #fff;
+  border-radius: 30px;
 }
 
 .container {
