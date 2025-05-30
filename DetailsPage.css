@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+.topbar {
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: #00775c;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  max-width: 400px;
+}
+
+.nav input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn.share {
+  background: #00775c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.highlight {
+  color: #00775c;
+}
+
+.intro-images {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section {
+  margin-top: 1.2rem;
+}
+
+.objectives {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.objectives > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.process {
+  margin-bottom: 2rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  background: #f1f9f8;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.gallery {
+  margin-bottom: 2rem;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.gallery-row img {
+  border-radius: 8px;
+  height: 200px;
+}
+
+.footer-links {
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.footer-actions a {
+  color: #00775c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .objectives {
+    flex-direction: column;
+  }
+}
