@@ -1,0 +1,120 @@
+header{
+background: white;
+}
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 10px 20px;
+border-bottom: 1px solid #ddd;
+flex-wrap: wrap;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 5px;
+}
+.logo img {
+width: 30px;
+height: 30px;
+}
+.logo span {
+font-weight: bold;
+color: #004d3c;
+font-size: 18px;
+}
+.nav-links a {
+margin-left: 20px;
+text-decoration: none;
+color: #333;
+font-weight: 500;
+}
+.nav-links a::before{
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+left: 0;
+bottom: -8px;
+background-color: #10a37f;
+transition: 0.3s ease;
+}
+.nav-links a:hover{
+color: #10a37f;
+}
+.nav-links a:hover::before{
+width: 100%;
+}
+.search-container {
+position: relative;
+flex-grow: 1;
+max-width: 400px;
+margin: 10px 20px;
+}
+.search-container input {
+width: 100%;
+padding: 10px 40px 10px 15px;
+border-radius: 25px;
+border: 1px solid #ccc;
+}
+.search-icon {
+position: absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+color: #888;
+}
+.icons {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.notification {
+position: relative;
+font-size: 20px;
+cursor: pointer;
+}
+.bell {
+font-size: 22px;
+}
+.bell a{
+text-decoration: none;
+}
+.badge {
+position: absolute;
+top: -8px;
+right: -8px;
+background-color: red;
+color: white;
+border-radius: 50%;
+padding: 3px 6px;
+font-size: 10px;
+}
+.avatar{
+display: flex;
+justify-content: space-between;
+padding: 4px 6px;
+}
+.avatar .avatar-img{
+width: 2.5rem;
+height: 2.5rem;
+border-radius: 50%;
+}
+.avatar .avatar-img img{
+width: 100%;
+height: 100%;
+}
+.user-info{
+padding: 3px 6px;
+}
+.user-info h3{
+font-size: 20px;
+}
+.user-info h5{
+font-weight: 400;
+color: var(--text-black-700);
+}
+.avatar select{
+border: none;
+}

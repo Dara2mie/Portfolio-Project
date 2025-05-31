@@ -12,6 +12,62 @@
 
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+  padding-right: 50px;
+  height: 60px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-right input {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #007960;
+  border: 1px solid #007960;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #007960;
+  color: #fff;
+  border-radius: 30px;
+}
+
+
+
 .main{
 
     background: white;
@@ -54,17 +110,18 @@
 
 .detail-text h3{
 
-    font-size: 25px;
+    font-size: 35px;
 
-    font-weight: 700;
+    font-weight: bolder;
 
-    padding-bottom: 10px;
+    margin: 1px;
 
 }
 
 .detail-text h3 span{
 
-    color: aqua;
+    color: #00996B;
+    font-weight: bolder;
 
 }
 
@@ -74,6 +131,7 @@
 
     color: var(--text-black-700);
 
+    width: 400px;
 }
 
 .detail-info{
@@ -92,11 +150,11 @@
 
 .detail-info-overview span{
 
-    font-size: 18px;
+    font-size: 20px;
 
-    font-weight: 500;
+    font-weight: bold;
 
-    color: orange;
+    color: #CC8500;
 
     padding-bottom: 10px;
 
@@ -108,6 +166,7 @@
 
     color: var(--text-black-700);
 
+    width: 200px;
 }
 
 .detail-info-goals{
@@ -118,11 +177,11 @@
 
 .detail-info-goals span{
 
-    font-size: 18px;
+    font-size: 20px;
 
-    font-weight: 500;
+    font-weight: bold;
 
-    color: orange;
+    color: #CC8500;
 
     padding-bottom: 10px;
 
@@ -146,19 +205,19 @@
 
 }
 
-/* .detail-img img{
+.detail-img img{
 
-    width: 50%;
+    width: 45%;
 
-    height: 300px;
+    height: 900px;
 
-} */
+}
 
 .detail-img .eight{
 
     width: 50%;
 
-    height: 300px;
+    height: 900px;
 
 }
 
@@ -166,7 +225,7 @@
 
     width: 50%;
 
-    height: 300px;
+    height: 900px;
 
     position: absolute;
 
@@ -198,7 +257,7 @@
 
     align-items: center;
 
-    background: aquamarine;
+    background: #E6F6F4;
 
 }
 
@@ -216,7 +275,7 @@
 
     font-size: 18px;
 
-    font-weight: 500;
+    font-weight: bold;
 
     padding-bottom: 10px;
 
@@ -240,13 +299,13 @@
 
 .detail-scroller{
 
-    --spacer: 15px;
+    --spacer: 25px;
 
     display: grid;
 
     grid-auto-flow: column;
 
-    grid-auto-columns: 23%;
+    grid-auto-columns: 30%;
 
     gap: var(--spacer);
 
@@ -282,7 +341,7 @@
 
     width: fit-content;
 
-    height: auto;
+    height: 300px;
 
     color: var(--text-black-700);
 
@@ -386,7 +445,7 @@
 
 .column span{
 
-    color: #004d3c;
+    color: #00996B;
 
 }
 
@@ -404,7 +463,7 @@
 
     font-weight: 500;
 
-    background: #004d3c;
+    background: #00996B;
 
     color: white;
 
@@ -418,7 +477,7 @@
 
 .column-element a{
 
-    color: #004d3c;
+    color: #00996B;
 
 }
 
@@ -436,6 +495,6 @@
 
 .row a{
 
-    color: var(--text-black-900);
+    color: #174582;
 
 }
