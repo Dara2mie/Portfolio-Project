@@ -219,6 +219,11 @@ body {
   border-bottom: 2px solid #0a8451;
   color: #0a8451;
 }
+.saved-d {
+  padding-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
