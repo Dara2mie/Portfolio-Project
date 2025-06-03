@@ -4,11 +4,7 @@
 
     padding: 0;
 
-
-
 }
-
-
 
 .navbar {
 
@@ -18,7 +14,7 @@
 
     position: relative;
 
-    justify-content: space-around;
+    justify-content: space-between;
 
     align-items: center;
 
@@ -26,7 +22,8 @@
 
     padding: 0;
 
-    gap: rem;
+    height: 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   } 
 
@@ -42,29 +39,30 @@
 
     opacity: 0.7;
 
+    margin-left: 20px;
   }
 
   .search-container{
 
-    width: 34rem;
+    width: 32rem;
 
     display: flex;
 
     border-radius: 50px;
 
-    align-items: start;
+    align-items: center;
 
-    justify-content: space-between;
+    justify-content: center;
 
-    padding: 20px;
+    padding:12px;
 
-    border: 2px solid rgb(70, 69, 69);
+    border: 2px solid lightgrey;
 
-    height: 4px;
+    height: 5px;
 
     cursor: pointer;
 
-    color: rgb(70, 69, 69);
+    color: #1A1A1A;
 
   }
 
@@ -78,7 +76,9 @@
 
     background-color: none;
 
-    font-size: 20px;
+    font-size: 14px;
+
+    padding-left: 10px;
 
   }
 
@@ -162,7 +162,7 @@
 
     transition: all 0.35 ease-in-out;
 
-    border: 2px solid rgb(40, 53, 40);
+    border: 2px solid #006647;
 
     margin: 15px;
 
@@ -170,7 +170,7 @@
 
   .log-sign-up ::placeholder{
 
-    color: rgb(40, 53, 40);
+    color: #006647;
 
     
 
@@ -180,7 +180,7 @@
 
     width: 5rem;
 
-    color: rgb(40, 53, 40);
+    color: #006647;
 
     
 
@@ -190,7 +190,7 @@
 
     width: 7rem;
 
-    background: #003324;
+    background: #006647;
 
     color: white;
 
@@ -214,9 +214,9 @@
 
     height: 500px;
 
-    background-color: rgb(203, 243, 243);
+    background-color: rgb(171, 223, 223);
 
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 
@@ -232,10 +232,11 @@
 
     width: 50%;
 
-    height: 70%;
+    height: 50%;
 
     line-height: -40px;
 
+    margin-top: 80px;
 }
 
 #Showcase-container{
