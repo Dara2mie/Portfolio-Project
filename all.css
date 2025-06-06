@@ -229,15 +229,6 @@ main {
   gap: 8px;
   font-size: 14px;
 }
-
-.tabs button img {
-  width: 16px;
-  height: 16px;
-}
-
-.tabs button span {
-  display: inline-block;
-}
 .tabs a {
   background: #e4e4e4;
   padding: 10px 15px;
@@ -252,9 +243,17 @@ main {
   color: #333;
 }
 
-.tabs .red {
+.tabs button img {
+  width: 16px;
+  height: 16px;
+}
+
+.tabs button span {
+  display: inline-block;
+}
+.tabs .git {
   background: #00704a;
-  color: #fff;
+  color: #e8f5e9;
 }
 
 .cards {
