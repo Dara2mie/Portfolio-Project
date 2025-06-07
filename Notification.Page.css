@@ -58,7 +58,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-
+.btn-outline a{
+  text-decoration: none;
+  color: #007960;
+}
 .btn-primary {
   background-color: #007960;
   color: #fff;
