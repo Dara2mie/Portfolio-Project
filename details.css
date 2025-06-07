@@ -12,6 +12,7 @@
 
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -73,6 +74,10 @@ header {
     background: white;
 
     margin: 20px;
+
+    padding-top: 20px;
+
+    padding-bottom: 0%;
 
 }
 
@@ -496,5 +501,21 @@ header {
 .row a{
 
     color: #174582;
+
+}
+
+.footer{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color:white;
+
+    padding: 10px;
+
+    margin: 10px;
 
 }
