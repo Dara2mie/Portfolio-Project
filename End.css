@@ -72,13 +72,8 @@ body {
 
 .share-btn {
   background: white;
-<<<<<<< HEAD
-  border: 1px solid #004d4d;
-  color: #004d4d;
-=======
   border: 1px solid #00704a;
   color: #333;
->>>>>>> origin/vote
   padding: 6px 10px;
   border-radius: 20px;
   display: flex;
@@ -202,11 +197,7 @@ body {
 }
 
 .category-buttons .active {
-<<<<<<< HEAD
-  background: #004d4d;
-=======
   background: #00704a;
->>>>>>> origin/vote
   color: white;
 }
 
