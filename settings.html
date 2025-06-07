@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="./css/media-queries-mobile.css" />
+    <link rel="stylesheet" href="./css/media-queries-tablets.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+
+    <title> Settings (Profile) </title>
+</head>
+
+<body>
+
+    <header>
+  <div class="logo"> <a href="index.html"><img src="./project1images/jodna-logo.png" alt="logo" style="height: 60px; width: 270px;"></a></div>
+  <div class="nav-right">
+    <p style="color: black; font-weight: 400;">Explore</p>
+    <button class="creatives" style="border-radius: 30px; background-color: white; border: 1px solid gray; height: 25px; display: flex; align-items: center; width: 300px;"> <img src="./project1images/search-bar.png" alt="" style="padding: 10px;"> Search Creatives work...</button>
+    <button class="btn btn-outline" style="height: 30px;"> <a href="upload.html">Share Your Work </a><img src="./project1images/right-arrow.png" alt=""></button>
+    <img src="./project1images/notification-bell.png" alt="" style="height: 20px; width: 20px;">
+    <img src="./project1images/Ellipse 1.png" alt="" style="height: 40px; width: 40px;">
+    <div>
+      <strong style="position: relative; bottom: -50px; top: 1px; font-size: small;">Adewale Austin</strong><br>
+      <small style="position: relative; top: -5px; font-size: xx-small;">UI/UX Design Intern</small>
+    </div>
+    <img src="./project1images/arroww-down.png" alt="">
+  </div>
+</header>
+
+    <div class="content mt prifile-content">
+
+        <div class="settings-nav">
+
+            <a href="settings.html"><h2 style="margin-bottom: 10px;">Settings</h2></a>
+
+            <div class="d-flex" style="font-weight: 700; width: 100%; flex-direction: column; gap: 20px; border-top: 2px solid #E6E6E6;
+
+            padding: 20px 0px;">
+
+                <div class="d-flex" style="justify-content: space-between;">
+                    <p style="font-weight: inherit;">Profile</p>
+                </div>
+
+                <div class="d-flex" style="justify-content: space-between;">
+                    <p style="font-weight: inherit;">Account</p>
+                </div>
+
+                <div class="d-flex" style="justify-content: space-between;">
+                    <p style="font-weight: inherit;"><a href="Notification.Page.html">Notifications</a></p>
+                </div>
+            </div>
+
+            <div class="d-flex" style="font-weight: 700; width: 100%; flex-direction: column; gap: 20px; border-top: 2px solid #E6E6E6;
+
+            padding: 20px 0px;">
+                <div class="d-flex" style="justify-content: space-between; align-items: center;">
+                    <p style="font-weight: inherit;">Theme</p>
+                    <img src="./project1images/mdi_chevron-right.png" alt="" height="16px">
+                </div>
+
+                <div class="d-flex" style="justify-content: space-between; align-items: center;">
+                    <p style="font-weight: inherit;">Support</p>
+                    <img src="./project1images/mdi_chevron-right.png" alt="" height="16px">
+                </div>
+            </div>
+
+            <button class="secondary-btn logout-btn" style="align-self: flex-start; margin-top: 120px;" id="logoutBtn">
+                <img src="./project1images/logout.png" alt="" height="20px">
+                Logout
+            </button>
+        </div>
+
+        <div class="profile-content">
+            <div class="edit-section text-inputs">
+                <div style="display: flex; gap: 40px; align-items: center;">
+                    <div class="profile-picture settings-pic"><img src="./project1images/Ellipse 1.png" alt="" style="height: 145px; width: 145px;"></div>
+                    <div>
+                        <div style="font-weight: 700; color: #808080; font-size: 22px; margin-bottom: 10px;">Name</div>
+                        <div style="font-weight: 700; color: #808080; font-size: 22px;">Adewale Austin</div>
+                    </div>
+                    <button class="secondary-btn" style="margin-left: 150px;">
+                        <a href="profile.html">Edit</a>
+                    </button>
+                </div>
+
+                <div class="section edit-name w-80">
+                    <label for="firstName"  style="display: flex; flex-direction: column; align-items: start; color: inherit;">
+                        First name
+                        <input class="input" type="text" id="firstName" Value="Adewale">
+                    </label>
+
+                    <label for="lastName" style="display: flex;  flex-direction: column; align-items: start; color: inherit;">
+                        Last name
+                        <input class="input" type="text" id="lastName" Value="Austin">
+                    </label>
+                </div>
+
+            
+
+                <div class="section about w-80">
+                    <label for="about"
+                        style="display: flex; flex-direction: column; align-items: start; color: inherit; width: 100%;">
+                        <a href="profile.html">Bio</a>
+                        <textarea class="input" name="about" id="about">I’m a UI UX Designer and also Frontend Developer</textarea>
+                    </label>
+                </div>
+            
+
+                <div class="section website">
+                    <button class="secondary-btn">Change Password</button>
+                </div>
+
+                <div class="section website">
+                    Connected Accounts
+                    <div class="section socials-wrapper" style="margin-top: 10px;">
+
+                        <button class="socials" style="color: #808080; font-weight: bold; font-size: 22px;">
+                            <img src="./project1images/color-google.png" alt="" width="24px">
+                            Google
+                        </button>
+
+                        <button class="socials" style="color: black; font-weight: bold; font-size: 22px;">
+                            <img src="./project1images/color-facebook.png" alt="" width="24px">
+                            Facebook
+                        </button>
+                        <button class="secondary-btn logout-btn" style="margin-top: 120px; position: relative; margin-left: -420px;" id="logoutBtn">
+                            <img src="./project1images/logout.png" alt="" height="20px">
+                            Logout
+                         </button>
+                    </div>
+                
+                </div>
+                
+                <button class="tertiary-btn">Delete Account</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="./javascript/web.js"></script>
+
+    <script src="./javascript/notification.js"></script>
+
+    <script src="./javascript/menu.js"></script>
+
+    <script src="./javascript/gridContent.js"></script>
+
+    <script src="./javascript/logout.js"></script>
+
+    <script src="./javascript/loginCheck.js"></script>
+
+    <script>
+
+        const logoutBtn = document.querySelector(".logout-btn");
+
+        logoutBtn.addEventListener("mouseenter", () => {
+
+            logoutBtn.firstElementChild.setAttribute("src", "./Assets/icons/logout-icon-white.png")
+        })
+
+        logoutBtn.addEventListener("mouseleave", () => {
+
+            logoutBtn.firstElementChild.setAttribute("src", "./Assets/icons/logout-icon.png")
+        })
+
+
+        const sections = document.querySelectorAll(".sections");
+
+        sections.forEach(item => {
+
+            item.addEventListener("click", () => {
+
+                sections.forEach(s => {
+
+                    s.style.color = "#808080"
+
+                    s.style.border = "none"
+                })
+                item.style.color = "#006647"
+
+                item.style.borderBottom = "2px solid #006647"
+            })
+
+
+            document.addEventListener("DOMContentLoaded", () => {
+
+                if (item.textContent === "My Work") {
+
+                    item.style.color = "#006647"
+
+                    item.style.borderBottom = "2px solid #006647"
+                }
+            })
+        })
+    </script>
+</body>
+</html>

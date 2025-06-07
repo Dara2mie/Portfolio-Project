@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  background-color: white;
+  height: 60px;
+}
+
+.logo {
+  font-weight: bold;
+  color: #004d40;
+  font-size: small;
+}
+
+.logo img{
+  height: 40px;
+}
+
+.top-link a {
+  color: black;
+  text-decoration: underline;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  font-size: 22px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.divider {
+  text-align: center;
+  position: relative;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.password-field {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+.btn-submit {
+  background-color: #006644;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forgot {
+  text-align: center;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 20px;
+  color: #1A1A1A;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .form-wrapper {
+    gap: 14px;
+  }
+
+  .btn-social {
+    font-size: 14px;
+  }
+
+  .top-link {
+    font-size: 12px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

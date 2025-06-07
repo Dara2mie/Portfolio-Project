@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+  padding-right: 50px;
+  height: 60px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-right input {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #007960;
+  border: 1px solid #007960;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #007960;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.container {
+  display: flex;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: -20px;
+}
+
+.sidebar {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 200px;
+  min-width: 180px;
+}
+
+.sidebar h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+  color: #555;
+}
+
+.sidebar .active {
+  color: #00775c;
+  font-weight: bold;
+}
+
+.notifications-section {
+  flex: 1;
+  background: lightgray
+  padding: 1.5rem;
+  border-radius: 12px;
+  min-width: 300px;
+}
+
+.notifications-section h2 {
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: -30px;
+  background-color: white;
+}
+
+.notification {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.notification img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.notification p {
+  margin-bottom: 0.3rem;
+  font-size: 12px;"
+}
+
+.notification .time {
+  color: #e53935;
+  font-size: 12px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

@@ -196,7 +196,11 @@ body {
 }
 
 .category-buttons .active {
+<<<<<<< HEAD
+  background: #004d4d;
+=======
   background: #00704a;
+>>>>>>> origin/vote
   color: white;
 }
 
