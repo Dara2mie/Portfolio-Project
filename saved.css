@@ -35,6 +35,13 @@ body {
   align-items: center;
   gap: 20px;
 }
+.logo-section a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0a8451;
+}
 
 .logo-img {
   height: 40px;

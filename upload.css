@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
   background-color: #f9f9f9;
   color: #333;
@@ -38,6 +38,13 @@ header {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+.nav-right a {
+  text-decoration: none;
+}
+a:hover {
+  color: #007960;
+  text-decoration: underline;
+}
 
 .btn {
   padding: 8px 16px;
@@ -52,6 +59,10 @@ header {
   color: #007960;
   border: 1px solid #007960;
   border-radius: 30px;
+}
+.btn-outline a {
+  text-decoration: none;
+  color: #007960;
 }
 
 .btn-primary {
@@ -73,7 +84,7 @@ header {
 .upload-header {
   display: flex;
   justify-content: space-between;
-  margin: 50px; 
+  margin: 50px;
   flex-wrap: wrap;
   position: relative;
   top: -30px;
@@ -88,7 +99,7 @@ h2 {
   margin-top: 0;
 }
 
-.upload-intro{
+.upload-intro {
   align-items: center;
   justify-content: center;
   position: relative;
@@ -141,27 +152,26 @@ h2 {
   margin-top: -80px;
 }
 
-.search img{
- width: 10px;
-height: 10px;
-padding-left: 20px;
+.search img {
+  width: 10px;
+  height: 10px;
+  padding-left: 20px;
 }
 
-.search{
+.search {
   color: black;
   background-color: white;
   border: 1px solid gray;
   padding: 10px;
   border-radius: 50px;
-
 }
 
-.creatives img{
+.creatives img {
   height: 20px;
   width: 20px;
 }
 
-.upload-intro{
+.upload-intro {
   display: flex;
   flex-direction: column;
   align-items: center;
